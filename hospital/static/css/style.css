@@ -1,0 +1,31 @@
+.navbar{
+    background-color: rgb(248, 9, 248);
+}
+li:hover{
+    color: red;
+    background-color: rgb(216, 192, 156);
+    border-radius: 50px;
+    border: .2px solid rgb(8, 8, 15);
+}
+ul{
+    margin-left: 45%;
+}
+h6{
+    margin-right: 5%;
+    margin-left:40%;
+}
+
+p{
+    margin-left:5%;
+    margin-right: 5%;
+}
+#company{
+    text-decoration: none;
+    color: rgb(27, 26, 26);
+}
+h1{
+    margin-right: 10%;
+}
+#heading{
+    background-color: aqua;
+}

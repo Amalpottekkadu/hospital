@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}home{% endblock title%}
+{%block content%}
+<br>
+<div id="heading">
+    <h1 class="mx-auto text-center" style="color:rgb(79, 147, 211)">Welcome to Palakkad<I> AK HOSPITAL</I></h1>
+</div><br>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/image/sd2.jpg' %}" class="d-block w-100 h-50" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/image/sd3.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/image/sd4.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/image/sd3.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+</div>
+<br>
+<br>
+
+<div style="background-color:azure;" class="d-flex justify-content:center;">
+    <div>
+        <h5 style="color:black;">ABOUT OUR COMPANY</h5>
+        <p style="color:rgb(27, 26, 26);">After establishing itself in the U.A.E., AK Group spread its wings to India with the establishment of AK Health, 
+            Heritage and Knowledge Village in nilambur, Kerala in 2005. 
+            The focus on health, heritage and knowledge is visionary and critical as they are inherited from the past, 
+            maintained in the present and bestowed for the benefit of future generations.
+    </div><br>
+    <div>
+        <h5 style="color:black;">HOSPITAL<br><br></h5>
+        <p style="color:rgb(27, 26, 26);">AK Health Heritage & Knowledge Village is an Integrated Campus consisting of AK Foundation Eye Hospital,
+             AK Ayurvedic Medical College and Hospital, AK Diabetes Hospital, AK Women and Children’s Hospital,
+              AK Heritage Village, AK Children’s Village, AK Public School, AK School of Optometry, 
+              AK School of Engineering & Technology, AK School of Management, AK School of Pharmacy and
+               AK School of Paramedical Sciences. AK also has 19 regional centres for eye care across Kerala.
+    </div>
+    <div>
+        <h5 style="color:black;">EDUCATIONAL INSTITUTIONS</h5>
+        <p style="color:rgb(27, 26, 26);">AK health heritage & knowledge village houses an integrated academic campus, 
+            the vision of AK educational institutions is to “Conquer the World of Professional 
+            Education through Quality”. It aims to transform students from all walks of life to knowledge-based, 
+            skill-intensive, ethical and moral professionals with competence, commitment and confidence.
+    </div>
+    
+</div>
+
+
+{% endblock content%}

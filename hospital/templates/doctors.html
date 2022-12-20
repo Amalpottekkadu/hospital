@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title%}doctors{% endblock title%}
+{%block content%}
+<div style="background-color:smokewhite">
+<br>
+<br>
+<h2 style="text-align:center;color:black;">OUR DOCTORS</h2>
+<br>
+{%for i in doctors%}
+<div style="margin-left:30%;">
+  <img src ="{{i.doc_image.url}}">
+  <h2>{{i.doc_name}}</h2>
+  <h3>{{i.doc_spec}}</h3>
+  <h5>{{i.dpt_name}}</h5><br>
+</div>
+<div style="background-color:black; margin-left:30%;margin-right:20%">
+  <hr><hr>
+  </div>
+{%endfor%}
+{% endblock content%}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}about{% endblock title%}
+{%block content%}
+<div class="m-5">
+<h1 style="color:red;">ABOUT</h1> 
+</div>
+<div>
+    <p><i>Ever since the inception of AK Group in 1984 in the nilambur of Kerala a small clinic, 
+        the focus to provide high-quality medical services to its patients continued even when the hospital 
+        was built on a small scale with minimum resources. The vision of group founder was simple and straightforward; 
+        to bring international standards of health care within the reach of common man in the Kerala as envisaged by him.
+    <i><p><br>
+    <p>It was possible only by the trust that people bestowed upon us and today AK 
+        Group has grown into a conglomerate that is serving humankind across the Kerala, 
+        with Two multi-specialty hospitals, 20 satellite medical centers in the peripheral 
+        areas of Kerala along with 35 Pharmacies providing high quality services and products to its patients. 
+        The group also operates a line of Ophthalmology Centers and Optical shops sprouting under 
+        the brand name Unique AK Ophthalmology Medical Centers in Kerala. 
+    <p>
+</div>
+<div style="background-color:black;" class="m-5">
+<hr><hr>
+</div><br><br>
+<div>
+    <h2>Social Media<h2><br>
+        <a class="whats m-5" href="#">
+            <img src="{% static '/image/whats.jpg' %}" alt="" width="100" height="100">
+        </a>
+        <a class="fb m-5" href="#">
+            <img src="{% static '/image/fb.jpg' %}" alt="" width="100" height="100">
+        </a>
+        <a class="insta m-5" href="#">
+            <img src="{% static '/image/insta.jpg' %}" alt="" width="100" height="100">
+        </a>
+        <a class="tel m-5" href="#">
+            <img src="{% static '/image/tel.jpg' %}" alt="" width="100" height="100">
+        </a>
+    </div>
+
+
+<br><nr>
+{% endblock content%}

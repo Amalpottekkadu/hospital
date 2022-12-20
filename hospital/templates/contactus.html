@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}contactus{% endblock title%}
+{%block content%}
+<br><br>
+<nav class="navbar static-fixed navbar-expand-lg navbar-light" style="background-color: green;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <h1 style="color:white;text-align:center;">CONTACT US</h2>
+    </div>
+</nav>
+<br><br>
+<div>
+    <h2 style="color:green;">CONTACT INFO -</h4>
+</div>
+<div>
+    <img src="{% static '/image/mobcall.jpg' %}" alt="" width="100" height="100"><br>
+    <h3>+91 8593940870<h3>
+        <div style="background-color:black;margin-right:86%">
+            <hr><hr>
+            </div>
+    <img src="{% static '/image/lancall.jpg' %}" alt="" width="100" height="100"><br>        
+    <h3>0491 1234<h3>
+</div>
+
+<br>
+<nav class="navbar static-fixed navbar-expand-lg navbar-light" style="background-color: green;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <h1 style="color:white;text-align:center;"> MAP</h2>
+    </div>
+</nav>
+<br
+<div>
+    <h2 style="color:green;">OUR LOCATION -</h2><br><br>
+    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+</div>
+
+{% endblock content%}

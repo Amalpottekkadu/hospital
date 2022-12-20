@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title%}{% endblock title%}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;display:flex">
+          <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container" style="background-color: #e3f2fd;">
+              <a class="navbar-brand" href="#">
+                <img src="{% static '/image/logo2.jpg' %}" alt="" width="50" height="30"><h3 style="color:blue">AK HOSPITAL</h3>
+              </a>
+            </div>
+          </nav>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'about' %}">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'booking' %}">BOOKING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'doctors' %}">DOCTORS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'departments' %}">DEPARTMENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'contactus' %}">CONTACT US</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+
+
+          {% block content%}{% endblock content%} 
+
+          
+                
+
+          <div style="background-color: #e3f2fd;">
+            <div class="d-flex justify-content:center m-5" >
+              <div>
+              <h4>CONTACT INFO</h4>
+              <P>Address:
+                AK Campus, nilambur, Kerala <br>
+                 679332<br>
+                Email:akgroup@gmail.com<br>
+                Phone number:0491-1234
+                </P>
+              </div><br>
+              <div> style="margin-left:100px"> 
+              <h4>CONTACT INFO</h4>
+              <P>AK Foundation Eye Hospital<br>
+                AK Diabetes Hospital<br>
+                AK Ayurveda Medical College Hospital<br>
+                AK Women & Children’s Hospital<br>
+                AK Ayurvedic Hospital<br>
+                AK Foundation Eye Hospital Regional Centres
+                </P>
+              </div><br>
+              <div>
+              <h4>ACADEMICS</h4>
+              <P>AK Ayurveda Medical College<br>
+                AK School of Engineering & Technology<br>
+                AK School of Optometry<br>
+                AK School of Paramedical Sciences<br>
+                AK School of Pharmacy<br>
+                AK School of Management<br>
+                AK Public School<br>
+                AK School of Commerce & Mathematics<br>
+                AK School of Nursing<br>
+                AK Multi Skill Training Institute
+              </P>
+            </div><br>
+            <div>
+              <h4>OUR APP</h4>
+              <a class="qr" href="#">
+                <img src="{% static '/image/qr.jpg' %}" alt="" width="100" height="100">
+              </a>
+              <a class="playstore" href="#">
+                <img src="{% static '/image/playstore.jpg' %}" alt="" width="" height="">
+              </a>
+              <a class="applestore" href="#">
+                <img src="{% static '/image/applestore.jpg' %}" alt="" width="" height="">
+              </a>
+            </div>
+            </div>
+          
+
+            <nav class="navbar static-fixed bottom-0 navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <h4 id="dis">© 2022 malappuram district <a id="company" href="{% url 'home' %}">AK HOSPITAL </a>and research centre ltd.. All rights reserved</h4><br>
+              <h6 style="text-align:end; margin-left:500px">site designed and developed by <a id="company" href="#">AK Web Solutions</a></h6>
+            </div>
+            </nav>
+          </div>
+
+          
+
+        <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+           
+      </body>
+</html>
